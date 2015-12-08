@@ -1,0 +1,5 @@
+{
+  "name": "bottle-example",
+  "description": "A simple Python web server using the Bottle framework.",
+  "repository": "https://github.com/kjiwa/bottle-example"
+}
