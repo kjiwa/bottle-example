@@ -2,7 +2,7 @@ import bottle
 
 APP = bottle.default_app()
 
-@bottle.route('/')
+@APP.route('/')
 def index():
   return '<p>Hello</p>'
 
