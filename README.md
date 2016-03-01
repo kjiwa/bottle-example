@@ -13,6 +13,14 @@ This project implements a simple, [WSGI](https://en.wikipedia.org/wiki/Web_Serve
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
 * [webapp2](https://webapp-improved.appspot.com/)
 
+## Prerequisites
+
+In order to modify the server and add your own endpoints, first you will need to [fork this repository](https://help.github.com/articles/fork-a-repo/). Click the "Fork" button at the top-right of this page.
+
+If you intend to deploy this service to [Heroku](https://www.heroku.com/) as described below, you will also need to sign up for an account with them.
+
+Note that both GitHub and Heroku accounts are free.
+
 ## Running the Server
 
 ### Running the Server Locally
@@ -33,15 +41,15 @@ Then, open a web browser and visit http://127.0.0.1:8080/ and you should see the
 
 ### Running the Server with a Hosting Provider
 
-There are many ways you can deploy the server to a hosting provider. We will be using [Heroku](https://www.heroku.com/), a platform provider, because it is free and because they provide a simple way to deploy. To deploy your service, simply click the "Deploy to Heroku" button at the top of this document. You will need to take note of the URL of your project. You can find the app name from your Heroku dashboard. Usually it will look something like http://your-app-name.herokuapp.com/.
+There are many ways you can deploy the server to a hosting provider. We will be using [Heroku](https://www.heroku.com/), a platform provider, because it is free and because they provide a simple way to deploy code from GitHub. To deploy your service, simply click the "Deploy to Heroku" button at the top of this document. You will need to take note of the URL of your project. You can find the app name from your Heroku dashboard -- usually it will have the form http://your-app-name.herokuapp.com/.
 
 #### Infrastructure as a Service
 
-The major categories of providers are Infrastructure as a Service (IaaS) or Platform as a Service (PaaS). IaaS providers give you a more traditional server environment where you provision individual machines instances and interact with the operating system. Your server will run as a process within the operating system and you are responsible for theits lifecycle. You must also handle scaling of your infrastructure and load balancing between instances. Many IaaS providers offer advanced features that can help you manage instances more easily. Examples of IaaS providers are [Amazon Web Services](http://aws.amazon.com/), [Google Cloud Platform](https://cloud.google.com/), and [Rackspace Public Cloud](https://www.rackspace.com/en-us/cloud).
+The major categories of cloud service providers are *Infrastructure as a Service* (IaaS) providers and *Platform as a Service* (PaaS) providers. IaaS providers give you a more traditional server environment where you provision individual machine instances and interact directly with the operating system. Your server will run as an OS process and you are responsible for its lifecycle. You must handle scaling of your infrastructure and load balancing between instances during times of load. Examples of IaaS providers are [Amazon Web Services](http://aws.amazon.com/), [Google Cloud Platform](https://cloud.google.com/), and [Rackspace Public Cloud](https://www.rackspace.com/en-us/cloud).
 
 #### Platform as a Service
 
-PaaS providers provide you with a simpler way to deploy and manage your application. Most PaaS providers will handle automatically scaling your service in times of load and are typically less expensive. However, your server must be written to conform with the platform's specifications. Most PaaS providers implement common standards, so this is typically not an issue. For example, most J2EE, node.js, and WSGI-compliant servers will run on PaaS providers. Examples of PaaS providers are [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/), [Google App Engine](https://cloud.google.com/appengine/), [Heroku](https://www.heroku.com/), and [PythonAnywhere](https://www.pythonanywhere.com/).
+PaaS providers provide you with a simpler way to deploy and manage your application. PaaS providers will manage the lifecycle of your server and automatically scale your service in times of load. As a result they are typically less expensive. However, your server must be written to conform with the platform's specifications. Most PaaS providers implement common standards, so this is typically not an issue. For example, most [J2EE](https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition), [Node.js](https://nodejs.org/), and WSGI-compliant servers will run on PaaS providers. Examples of PaaS providers are [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/), [Google App Engine](https://cloud.google.com/appengine/), [Heroku](https://www.heroku.com/), and [PythonAnywhere](https://www.pythonanywhere.com/).
 
 ## Modifying the Server
 
