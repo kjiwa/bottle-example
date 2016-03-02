@@ -1,4 +1,4 @@
-# bottle-example
+# Bottle Web Service Example
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
