@@ -1,6 +1,6 @@
 import bottle
 
-APP = bottle.default_app()
+APP = bottle.Bottle()
 
 @APP.get('/')
 def index():
