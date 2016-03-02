@@ -1,8 +1,8 @@
 # Bottle Web Service Example
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
 A simple Python web server using the Bottle framework.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Overview
 
@@ -15,11 +15,11 @@ This project implements a simple, [WSGI](https://en.wikipedia.org/wiki/Web_Serve
 
 ## Prerequisites
 
-In order to modify the server and add your own endpoints, first you will need to [fork this repository](https://help.github.com/articles/fork-a-repo/). Click the "Fork" button at the top-right of this page.
-
-If you intend to deploy this service to [Heroku](https://www.heroku.com/) as described below, you will also need to sign up for an account with them.
+In order to follow this guide you will need a GitHub account. If you intend to deploy this service to [Heroku](https://www.heroku.com/) as described below, you will also need to sign up for an account with them.
 
 Note that both GitHub and Heroku accounts are free.
+
+In order to modify the server and add your own endpoints, first you will need to [fork this repository](https://help.github.com/articles/fork-a-repo/). To do so, click the "Fork" button at the top-right of this page.
 
 ## Running the Server
 
