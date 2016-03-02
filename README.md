@@ -75,7 +75,7 @@ def random_integer():
 
 Now, restart your server (or redeploy it), open the server in your web browser, and add "/random" to the end of your URL. For example, [http://bottle-example.test**/random**](http://bottle-example.test/random). If you refresh the page several times, you should notice that the return value is different each time.
 
-### Adding and Endpoint with Parameters
+### Adding an Endpoint with Parameters
 
 We can also send parameters to our server. In Bottle, this is accomplished by specifying variables in the URL. Open [server.py](server.py) and add the following code:
 
