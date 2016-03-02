@@ -15,7 +15,7 @@ This project implements a simple, [WSGI](https://en.wikipedia.org/wiki/Web_Serve
 
 ## Prerequisites
 
-In order to follow this guide you will need a GitHub account. If you intend to deploy this service to [Heroku](https://www.heroku.com/) as described below, you will also need to sign up for an account with them.
+In order to follow this guide you will need a [GitHub](https://github.com/) account. If you intend to deploy this service to [Heroku](https://www.heroku.com/) as described below, you will also need to sign up for an account with them.
 
 Note that both GitHub and Heroku accounts are free.
 
@@ -41,7 +41,13 @@ Then, open a web browser and visit http://127.0.0.1:8080/ and you should see the
 
 ### Running the Server with a Hosting Provider
 
-There are many ways you can deploy the server to a hosting provider. We will be using [Heroku](https://www.heroku.com/), a platform provider, because it is free and because they provide a simple way to deploy code from GitHub. To deploy your service, simply click the "Deploy to Heroku" button at the top of this document. You will need to take note of the URL of your project. You can find the app name from your Heroku dashboard -- usually it will have the form http://your-app-name.herokuapp.com/.
+There are many ways you can deploy the server to a hosting provider. We will be using [Heroku](https://www.heroku.com/), a platform provider, because it is free and because they provide a simple way to deploy code from GitHub.
+
+To deploy your service, simply click the [Deploy to Heroku](https://heroku.com/deploy) button at the top of this document. You will be directed to Heroku where you can optionally enter an application name. A name will be automatically generated for you if you leave this field blank. Click "Deploy for Free" and then "View App".
+
+You will need to take note of the URL of your project. You can find the app name from your Heroku dashboard -- usually it will have the form http://your-app-name.herokuapp.com/.
+
+You may wish to follow Heroku's [GitHub Integration](https://devcenter.heroku.com/articles/github-integration) steps. This will cause Heroku to automatically update your app with changes you make in GitHub.
 
 #### Infrastructure as a Service
 
@@ -53,7 +59,7 @@ PaaS providers provide you with a simpler way to deploy and manage your applicat
 
 ## Modifying the Server
 
-For the purpose of this example, let us assume that the server is deployed at http://bottle-example.test/. If you are running locally, this address will be http://127.0.0.1:8080/. If the server is deployed to Heroku, it will be something like http://your-app-name.herokuapp.com/. You can find the app name from your Heroku dashboard.
+For the purpose of this example, let us assume that the server is deployed at http://bottle-example.test/. The actual URL of your server will differ. If you are running the server locally, this address will be http://127.0.0.1:8080/. If the server is deployed to Heroku, it will be something like http://your-app-name.herokuapp.com/. You can find the app name from your Heroku dashboard.
 
 ### Adding an Endpoint
 
@@ -67,7 +73,7 @@ def random_integer():
   return str(random.randint(0, 100))
 ```
 
-Now, restart your server (or redeploy it), open the server in your web browser, and add "/random" to the end of your URL. For example, http://bottle-example.test/random. If you refresh the page several times, you should notice that the return value is different each time.
+Now, restart your server (or redeploy it), open the server in your web browser, and add "/random" to the end of your URL. For example, [http://bottle-example.test**/random**](http://bottle-example.test/random). If you refresh the page several times, you should notice that the return value is different each time.
 
 ### Adding and Endpoint with Parameters
 
@@ -79,7 +85,7 @@ def greet(salutation, name):
   return '<p>Hello %s %s</p>' % (salutation, name)
 ```
 
-Again, restart/redeploy your server and visit http://bottle-example.test/greet/Dr/Jekyll and http://bottle-example.test/greet/Mr/Hyde. You will notice that the displayed text changes depending on the parameters you have specified in your URL.
+Again, restart/redeploy your server and visit [http://bottle-example.test**/greet/Dr/Jekyll**](http://bottle-example.test/greet/Dr/Jekyll) and [http://bottle-example.test**/greet/Mr/Hyde**](http://bottle-example.test/greet/Mr/Hyde). You will notice that the displayed text changes depending on the parameters you have specified in your URL.
 
 ### Serving Static Content
 
@@ -108,4 +114,4 @@ def index():
   return bottle.static_file('index.html', '.')
 ```
 
-Again, restart/redeploy your server and visit http://bottle-example.test/index.html. You should see the contents of your HTML file displayed in your web browser.
+Again, restart/redeploy your server and visit [http://bottle-example.test**/index.html**](http://bottle-example.test/index.html). You should see the contents of your HTML file displayed in your web browser.
