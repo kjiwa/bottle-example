@@ -73,7 +73,7 @@ def random_integer():
   return str(random.randint(0, 100))
 ```
 
-Now, restart your server (or redeploy it), open the server in your web browser, and add "/random" to the end of your URL. For example, [http://bottle-example.test**/random**](http://bottle-example.test/random). If you refresh the page several times, you should notice that the return value is different each time.
+Now, restart your server (or redeploy it), open the server in your web browser, and add "/random" to the end of your URL. For example, [http://bottle-example.test/random](http://bottle-example.test/random). If you refresh the page several times, you should notice that the return value is different each time.
 
 ### Adding an Endpoint with Parameters
 
@@ -85,7 +85,7 @@ def greet(salutation, name):
   return '<p>Hello %s %s</p>' % (salutation, name)
 ```
 
-Again, restart/redeploy your server and visit [http://bottle-example.test**/greet/Dr/Jekyll**](http://bottle-example.test/greet/Dr/Jekyll) and [http://bottle-example.test**/greet/Mr/Hyde**](http://bottle-example.test/greet/Mr/Hyde). You will notice that the displayed text changes depending on the parameters you have specified in your URL.
+Again, restart/redeploy your server and visit [http://bottle-example.test/greet/Dr/Jekyll](http://bottle-example.test/greet/Dr/Jekyll) and [http://bottle-example.test/greet/Mr/Hyde](http://bottle-example.test/greet/Mr/Hyde). You will notice that the displayed text changes depending on the parameters you have specified in your URL.
 
 ### Serving Static Content
 
@@ -114,4 +114,4 @@ def index():
   return bottle.static_file('index.html', '.')
 ```
 
-Again, restart/redeploy your server and visit [http://bottle-example.test**/index.html**](http://bottle-example.test/index.html). You should see the contents of your HTML file displayed in your web browser.
+Again, restart/redeploy your server and visit [http://bottle-example.test/index.html](http://bottle-example.test/index.html). You should see the contents of your HTML file displayed in your web browser.
